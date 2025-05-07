@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="number">Number:</label><br>
+        <input type="number" id="number" name="number" min="0" max="10"><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br>
+
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="file">Choose file:</label><br>
+        <input type="file" id="file" name="file"><br>
+
+        <label for="hidden">Hidden Field:</label>
+        <input type="hidden" id="hidden" name="hidden" value="secret_value"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <label for="options">Choose an option:</label><br>
+        <select id="options" name="options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br><br>
+
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <p>Select your interests:</p>
+        <input type="checkbox" id="interest1" name="interests" value="coding">
+        <label for="interest1">Coding</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="design">
+        <label for="interest2">Design</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="music">
+        <label for="interest3">Music</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Click Me</button>
+    </form>
+
+</body>
+</html>
